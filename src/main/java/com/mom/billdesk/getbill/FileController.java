@@ -15,6 +15,12 @@ import static com.mom.billdesk.getbill.MakeTablePdf.getPdfFile;
 @Controller
 public class FileController {
 
+    @GetMapping(value = "/welcome")
+    public String Welcome(){
+        return "Welcome, the app is running fine";
+    }
+
+
     @PostMapping(value = "/getFiles")
     @CrossOrigin
     @Produces("application/pdf")
