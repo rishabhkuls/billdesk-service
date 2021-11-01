@@ -12,19 +12,19 @@ import java.io.*;
 import static com.mom.billdesk.getbill.MakeTablePdf.getPdfFile;
 
 
-@Controller
+@RestController
 public class FileController {
 
     @GetMapping(value = "/welcome")
-    public String Welcome(){
-        return "Welcome, the app is running fine";
+    @Produces("text/plain")
+    public String getClichedMessage() {
+        System.out.println("welcome");
+        return "Hello World";
     }
-
 
     @PostMapping(value = "/getFiles")
     @CrossOrigin
     @Produces("application/pdf")
-    @ResponseBody
         public ResponseEntity<byte[]> getFiles(@RequestBody String fileParams){
 
         FileInputParams fip = new FileInputParams(fileParams);

@@ -72,8 +72,9 @@ public class MakeTablePdf {
 
     private static Document addLogo(Document doc) {
         String logo = "src\\main\\resources\\misLogo.jpg";
+        String logo1 = "../../../../misLogo.jpg";
         try {
-            Image img = Image.getInstance(logo);
+            Image img = Image.getInstance(logo1);
             img.scaleToFit(50f, 50f);
             img.setAlignment(Element.ALIGN_MIDDLE);
             doc.add(img);
