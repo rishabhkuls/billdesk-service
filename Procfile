@@ -1,1 +1,1 @@
-web: spring-boot:run
+web: java -jar target/getbill-1.0.0.war
