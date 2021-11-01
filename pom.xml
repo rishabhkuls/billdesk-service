@@ -11,7 +11,7 @@
 	<groupId>com.mom.billdesk</groupId>
 	<artifactId>getbill</artifactId>
 	<version>1.0.0</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>getbill</name>
 	<description>Demo project for Spring Boot</description>
 	<dependencies>
